@@ -5,3 +5,14 @@
 <script src="{{ $script.RelPermalink }}"></script>
 {{ $script := resources.Get "js/hugrid.custom.js" | minify }}
 <script src="{{ $script.RelPermalink }}"></script>
+
+<script>
+function toggleLogoImg(id) {
+    var img = document.getElementById(id).src;
+    if (img.indexOf({{ .Site.Params.logo_light | relURL }}) != -1) {
+      document.getElementById(id).src = {{ .Site.Params.logo_dark | relURL }};
+    } else {
+      document.getElementById(id).src = {{ .Site.Params.logo_light | relURL }};
+    }
+  }
+</script>

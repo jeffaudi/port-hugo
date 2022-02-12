@@ -147,15 +147,6 @@
     }
   });
 
-  function toggleLogoImg(id) {
-    var img = document.getElementById(id).src;
-    if (img.indexOf('logo-black.png') != -1) {
-      document.getElementById(id).src = '/images/logo-white.png';
-    } else {
-      document.getElementById(id).src = '/images/logo-black.png';
-    }
-  }
-
   // Styling Menu on Scroll
   if (window.location.pathname === '/') {
     $('.about-me').waypoint({
