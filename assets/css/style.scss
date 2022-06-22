@@ -835,9 +835,11 @@ label {
     width: 90%;
   }
 }
+.mission,
 .experience-skill {
   margin-top: 40px;
 }
+.mission,
 .experience,
 .skill {
   h2 {
@@ -846,6 +848,7 @@ label {
     letter-spacing: 2px;
   }
 }
+.mission-chart,
 .experience-chart {
   list-style: none;
   padding: 0px 0px 0px 6px;
@@ -860,6 +863,7 @@ label {
     }
   }
 }
+ul.mission-chart,
 ul.experience-chart {
   li {
     padding-left: 30px;
@@ -896,6 +900,7 @@ ul.experience-chart {
     color: #4d4d4d;
   }
 }
+.single-mission,
 .single-experience {
   position: relative;
   top: -2px;
@@ -951,6 +956,10 @@ ul.experience-chart {
     letter-spacing: 4px;
     position: relative;
   }
+}
+.single-portfolio {
+  font-weight: 700;
+  color: #6f6f6f;
 }
 .under-menu {
   margin-top: 80px;
