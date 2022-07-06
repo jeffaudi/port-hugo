@@ -4,7 +4,7 @@
 <!-- =============================
        Start About Me
     =============================== -->
-<section class="about-me" id="services">
+<section class="about-me">
   <div class="container">
     {{ if .Site.Data.content.about.enable }} {{ with .Site.Data.content.about }}
     <div class="row about-me-holder">
@@ -39,7 +39,7 @@
     </div>
     {{ end }} {{ end }}
 
-    <div class="row mission">
+    <div class="row mission" id="mission">
       {{ if .Site.Data.content.mission.enable }} {{ with
       .Site.Data.content.mission }}
       <div class="col-lg-12 col-sm-12 col-11 mission">
@@ -107,14 +107,14 @@
   <!-- =============================
          End Portfolio
       =============================== -->
-
+  <section class="about-me" id="services">
     <div class="row experience-skill">
-      {{ if .Site.Data.content.experience.enable }} {{ with
-      .Site.Data.content.experience }}
+      {{ if .Site.Data.content.services.enable }} {{ with
+      .Site.Data.content.services }}
       <div class="col-lg-12 col-sm-12 col-11 experience">
         <h2>{{ .title }}</h2>
         <ul class="experience-chart">
-          {{ range .experience_list }}
+          {{ range .services_list }}
           {{ if not (eq .enable false) }}
             <li>
               <div class="single-experience">
@@ -134,7 +134,8 @@
       </div>
       {{ end }} {{ end }} 
     </div>
-  </div>
+  </section>
+</div>
 </section>
 <!-- =============================
       End About Me
